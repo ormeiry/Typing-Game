@@ -21,7 +21,7 @@ const med = 4;
 let num = 0;
 const hard = 2;
 let start = false;
-const btnArray = [5];
+const btnArray = [6];
 let time = btnArray[btnArray.length - 1];
 const highScores = [];
 

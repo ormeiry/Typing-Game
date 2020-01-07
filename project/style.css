@@ -57,7 +57,7 @@ h3 {
 }
 
 .btn:hover {
-  background-color: rgba(51, 55, 93, 0.904);
+  background-color: rgba(98, 98, 98, 0.904);
 }
 
 .wrapper {
@@ -98,6 +98,7 @@ aside h3 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 1.5em;
 }
 
 .scores {
