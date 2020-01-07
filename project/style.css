@@ -9,6 +9,12 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(./assetes/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   width: 100vw;
   min-height: 100vh;
@@ -16,19 +22,17 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(78, 28, 28);
-  background: linear-gradient(0deg, rgb(83, 9, 9) 0%, rgb(206, 199, 199) 100%);
   color: rgb(0, 0, 0);
 }
 
 header h1 {
-  font-size: 5em;
+  font-size: 6em;
   font-weight: 300;
 }
 
 header p {
   width: 25em;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 100;
 }
 
@@ -44,10 +48,18 @@ h3 {
   margin: 0;
 }
 
+#headBtn {
+  background-color: rgba(180, 79, 79, 0.698);
+}
+
+#headBtn:hover {
+  background-color: rgba(0, 0, 0, 0.698);
+}
+
 .btn {
   background-color: rgba(10, 10, 10, 0.904);
   border: none;
-  border-radius: 10%;
+  border-radius: 20px;
   width: 6em;
   height: 3em;
   color: aliceblue;
@@ -57,16 +69,10 @@ h3 {
 }
 
 .btn:hover {
-  background-color: rgba(98, 98, 98, 0.904);
+  background-color: rgba(180, 79, 79, 0.698);
 }
 
 .wrapper {
-  background: rgb(78, 28, 28);
-  background: linear-gradient(
-    180deg,
-    rgb(83, 9, 9) 0%,
-    rgb(206, 199, 199) 100%
-  );
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -110,11 +116,10 @@ aside h3 {
 }
 
 .scores ol {
-  list-style: lower-greek;
-  text-align: center;
   border: 1.5px solid aliceblue;
   background-color: rgb(10, 10, 10);
-  padding: 3em;
+  padding: 1em;
+  border-radius: 20px;
 }
 
 ol li {
@@ -132,9 +137,9 @@ ol li {
 }
 
 .main h1 {
-  color: aliceblue;
+  color: rgba(180, 79, 79, 0.876);
   font-size: 4.5em;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 0.08em;
 }
 
@@ -149,6 +154,7 @@ input {
   text-align: center;
   font-size: 25px;
   border: 1.5px solid aliceblue;
+  border-radius: 20px;
   background-color: rgb(10, 10, 10);
   color: aliceblue;
 }
@@ -157,4 +163,160 @@ input::placeholder {
   color: aliceblue;
   font-size: 25px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 300;
+  }
+
+  header p {
+    width: 20em;
+    font-size: 1.8em;
+    font-weight: 100;
+  }
+
+  .btn {
+    background-color: rgba(10, 10, 10, 0.904);
+    border-radius: 20px;
+    width: 6em;
+    height: 3em;
+    color: aliceblue;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 1em;
+  }
+
+  input {
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  input::placeholder {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  aside {
+    text-align: center;
+    width: 30vw;
+    margin-left: 1em;
+  }
+
+  aside h3 {
+    font-size: 2em;
+    font-weight: 100;
+  }
+
+  .choice {
+    font-size: 1.3em;
+  }
+
+  .scores {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 100;
+  }
+
+  .main {
+    width: 70vw;
+    padding-right: 1em;
+  }
+
+  .main h1 {
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+
+  .main h3 {
+    font-size: 2.5em;
+    font-weight: 100;
+  }
+
+  .main p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+
+  header p {
+    width: 20em;
+    font-size: 1em;
+    font-weight: 100;
+  }
+
+  .btn {
+    background-color: rgba(10, 10, 10, 0.904);
+    border-radius: 20px;
+    width: 6em;
+    height: 3em;
+    color: aliceblue;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 1em;
+  }
+
+  input {
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  input::placeholder {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  aside {
+    text-align: center;
+    width: 30vw;
+    margin-left: 1em;
+  }
+
+  aside h3 {
+    font-size: 1.3em;
+    font-weight: 100;
+  }
+
+  .choice {
+    font-size: 1em;
+  }
+
+  .scores {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 100;
+  }
+
+  .main {
+    width: 70vw;
+    padding-right: 1em;
+  }
+
+  .main h1 {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+
+  .main h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+  }
+
+  .main p {
+    text-align: center;
+  }
 }
